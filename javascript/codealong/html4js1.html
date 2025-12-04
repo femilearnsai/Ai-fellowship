@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codealong js 1</title>
+    
+    <style>
+    .js-demo {
+        background-color: #f8f9fa;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        border: 2px solid #007bff;
+        color: black
+    }
+    
+    .output {
+        background-color: #e9ecef;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-family: 'Courier New', monospace;
+        border-left: 4px solid #28a745;
+    }
+    
+    .demo-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    .demo-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <div class="js-demo">
+            <h3>Your First JavaScript Program</h3>
+            <p>Click the button to run your first JavaScript code:</p>
+            
+            <button class="demo-button" onclick="runFirstProgram()">Run Hello World</button>
+            <button class="demo-button" onclick="showAlert()">Show Alert</button>
+            
+            <div id="first-output" class="output">Output will appear here...</div>
+        </div>
+
+        <div class="js-demo">
+            <h3>Working with Variables</h3>
+                <p>Click each button to see different variable examples:</p>
+                
+                <button class="demo-button" onclick="showBasicVariables()">Basic Variables</button>
+                <button class="demo-button" onclick="showVariableTypes()">Variable Types</button>
+                <button class="demo-button" onclick="demonstrateConstVsLet()">const vs let</button>
+                <button class="demo-button" onclick="variableNamingExamples()">Naming Examples</button>
+            
+        <div id="variables-output" class="output">Click a button to see variable examples...</div>
+        
+        <div class="js-demo">
+            <h3>Data Types Deep Dive</h3>
+                <p>Explore different data types and how JavaScript handles them:</p>
+                
+                <button class="demo-button" onclick="exploreStrings()">Strings</button>
+                <button class="demo-button" onclick="exploreNumbers()">Numbers</button>
+                <button class="demo-button" onclick="exploreBooleans()">Booleans</button>
+                <button class="demo-button" onclick="exploreSpecialValues()">Special Values</button>
+                
+        <div id="datatypes-output" class="output">Click a button to explore data types...</div>
+
+        <!-- ARITHEMETIC OPERATORS and OPERATOR PRECEDENCE -->
+        <div class="js-demo">
+            <h3>Arithmetic and Assignment Operators</h3>
+            <p>Explore how JavaScript handles mathematical operations and assignments:</p>
+            
+            <button class="demo-button" onclick="showArithmeticOperators()">Arithmetic Operators</button>
+            <button class="demo-button" onclick="showAssignmentOperators()">Assignment Operators</button>
+
+            
+        <div id="operators-output" class="output">Click a button to explore operators...</div>
+
+        <div class="js-demo">
+            <h3>String Operations and Template Literals</h3>
+            <p>Learn different ways to work with strings in JavaScript:</p>
+            
+            <button class="demo-button" onclick="showStringConcatenation()">String Concatenation</button>
+            <button class="demo-button" onclick="showTemplateLiterals()">Template Literals</button>
+            <button class="demo-button" onclick="showStringMethods()">String Methods</button>
+        
+        <div id="string-output" class="output">Click a button to explore string operations...</div>
+
+        <div class="js-demo">
+            <h3>Practice Exercise 1: Personal Information</h3>
+            <p>Create your personal information display:</p>
+            
+            <button class="demo-button" onclick="createPersonalInfo()">Show My Info</button>
+            <button class="demo-button" onclick="createCustomInfo()">Create Custom Info</button>
+        
+        <div id="exercise1-output" class="output">Click a button to create your personal information display...</div>
+
+        <div class="js-demo">
+            <h3>The typeof Operator</h3>
+            <p>Learn how to check data types in JavaScript:</p>
+            
+            <button class="demo-button" onclick="demonstrateTypeof()">Show typeof Examples</button>
+            <button class="demo-button" onclick="typeCheckingPractice()">Type Checking Practice</button>
+    
+        <div id="typeof-output" class="output">Click a button to explore the typeof operator...</div>
+</div>
+    </div>
+
+
+    </div>
+
+    <script src="javascript_1.js"></script>
+    </body>
+    </html>

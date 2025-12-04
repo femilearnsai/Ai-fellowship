@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Please enter your email">
+    <button id="btn">Submit</button>
+
+    <label for="sampleText"></label>
+    <input type="text" id="stt" placeholder="write a sample Text">
+
+    <input type="name" id="name" placeholder="Please enter your fullname">
+    <button id="btn-input">fullname</button>
+
+    <script>
+        document.getElementById("container").innerText = "<button>Click     me</button>"
+        document.querySelector("#container")
+        document.querySelector("#container").style.backgroundColor = 'yellow' 
+        let hg = document.createElement("h1")
+        hg.textContent = 'Bola is a girl'
+        document.getElementById("container").appendChild(hg)
+        let dh = document.getElementById("email")
+        console.log(dh.value)
+        let btn = document.getElementById("btn")
+        btn.addEventListener("click", function(){console.log(dh.value)})
+        let stt = document.getElementById("stt")
+        stt.addEventListener("input", function(){console.log(stt.value)})
+
+        let name = document.getElementById("name")
+        let btnInput = document.getElementById("btn-input")
+
+        btnInput.addEventListener("onmouseover", handleMouseOver())
+        function handleMouseOver() {
+            document.getElementById("btn-input").style.backgroundColor = 'lightblue';
+            document.getElementById("btn-input").textContent = 'Mouse is over me!';
+            
+        }
+        
+
+        btnInput.addEventListener("click", function(){
+            let inputField = name.value
+            console.log(inputField)
+        })
+
+    </script>
+</body>
+</html>

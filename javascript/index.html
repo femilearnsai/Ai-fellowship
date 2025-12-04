@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Task</title>
+    <style>
+       * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+       
+       body {
+            font-family: Georgia, serif, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .container {
+            display: flex;
+            margin: 10px 0;
+            padding: 10px 15px;
+            font-size: 50px;
+            cursor: pointer;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(34, 34, 145);
+            align-content: baseline;
+            
+           
+        }
+        p {
+            margin: 5px 0 15px 0;
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 30px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(34, 34, 145);
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+
+</head>
+<body>
+    <div class ="container">
+        <div">
+            <button id="myBtn">About Me</button>
+            <button id="contact"> Contact</button>
+            <button id="skill">skills</button>
+        </div>    
+        <p id="myParagraph" style="display:none;">Hello! My name is Olufemi, I am learning Ai development at an Ai fellowship. I look forward to building Ai Technologies that solves real problems.</p>
+        <p id="contact-details" style="display:none;">Email:pelumifemi87@gmail.com Phone: +234 817 260 0297</p>
+        <p id="skills-details" style="display:none;">HTML, CSS, JavaScript, React, Node.js</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
